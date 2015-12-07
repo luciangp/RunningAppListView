@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="timer_layout_height">20dp</dimen>
+    <dimen name="icon_width">45dp</dimen>
+    <dimen name="icon_height">45dp</dimen>
+    <dimen name="small_icon_width">17dp</dimen>
+    <dimen name="small_icon_height">17dp</dimen>
+    <dimen name="paddingTop_right_layout">22dp</dimen>
+    <dimen name="paddingBottom_right_layout">15dp</dimen>
+    <dimen name="paddingTop_left_layout">15dp</dimen>
+    <dimen name="paddingBottom_left_layout">15dp</dimen>
+    <dimen name="leftPadding_left_layout">15dp</dimen>
+    <dimen name="topPadding_left_layout">15dp</dimen>
+    <dimen name="mileageBottomPadding">7dp</dimen>
+    <dimen name="kmTextSize">42sp</dimen>
+    <dimen name="mileageTextSize">25sp</dimen>
+    <dimen name="dateTextSize">15sp</dimen>
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="KmTextStyle">
+        <item name="android:textColor">@color/nikeColor</item>
+        <item name="android:textSize">@dimen/kmTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="DateTextStyle">
+        <item name="android:textColor">@color/dateColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/dateTextSize</item>
+    </style>
+
+    <style name="MileageStyle">
+        <item name="android:textColor">@color/nikeColor</item>
+        <item name="android:textSize">@dimen/mileageTextSize</item>
+        <item name="android:paddingBottom">@dimen/mileageBottomPadding</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListViewRightLayout" >
+        <item name="android:paddingTop">@dimen/paddingTop_right_layout</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom_right_layout</item>
+    </style>
+
+    <style name="ListViewLeftLayout" >
+        <item name="android:paddingTop">@dimen/paddingTop_left_layout</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom_left_layout</item>
+        <item name="android:paddingLeft">@dimen/leftPadding_left_layout</item>
+    </style>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="4.2"
+        style="@style/ListViewLeftLayout"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/DateTextStyle"
+            android:text="Test"
+            android:id="@+id/dateTextView"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/KmTextStyle"
+                android:text="11.58"
+                android:id="@+id/kmTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mileageText"
+                style="@style/MileageStyle"
+                android:layout_toRightOf="@+id/kmTextView"
+                android:layout_alignBottom="@+id/kmTextView"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ListViewRightLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:id="@+id/iconslayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nricon"/>
+            <ImageView
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:id="@+id/faceicon"/>
+            <ImageView
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:id="@+id/roadicon"/>
+            <ImageView
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:id="@+id/sunicon"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/small_icon_width"
+            android:layout_height="@dimen/small_icon_height"
+            android:background="@drawable/timer"
+            android:layout_below="@+id/iconslayout"
+            android:id="@+id/timerIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/timer_layout_height"
+            android:layout_below="@+id/iconslayout"
+            android:text="8'58''"
+            android:layout_toRightOf="@+id/timerIcon"
+            android:id="@+id/timerTextView"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/small_icon_width"
+            android:layout_height="@dimen/small_icon_height"
+            android:background="@drawable/timer"
+            android:layout_below="@+id/iconslayout"
+            android:layout_toRightOf="@+id/timerTextView"
+            android:id="@+id/totalTimeIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/timer_layout_height"
+            android:layout_below="@+id/iconslayout"
+            android:text="1:09:18"
+            android:layout_toRightOf="@+id/totalTimeIcon"
+            android:id="@+id/totalTimeTextView"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
